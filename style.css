@@ -1,27 +1,29 @@
-body {
+/* Reset CSS */
+* {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: hsl(0, 0%, 42%);
+    box-sizing: border-box;
 }
 
-.container {
-    width: 80%;
-    margin: 0 auto;
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #ccc; /* Fundo cinza */
 }
 
 header {
-    background-color: rgb(196, 0, 0);
-    color: rgb(255, 255, 255);
-    padding: 20px 0;
+    background-color: #990000; /* Vermelho escuro */
+    color: #fff;
+    padding: 20px;
 }
 
 header h1 {
-    font-size: 24px;
+    font-size: 2em;
 }
 
 nav ul {
-    list-style-type: none;
+    list-style: none;
 }
 
 nav ul li {
@@ -30,78 +32,49 @@ nav ul li {
 }
 
 nav ul li a {
-    color: rgb(255, 255, 255);
+    color: #fff;
     text-decoration: none;
 }
 
-#hero {
-    background-image: url('hero.jpg');
-    background-size: cover;
+#banner {
+    background-color: #cc0000; /* Vermelho */
     color: #fff;
     text-align: center;
-    padding: 100px 0;
+    padding: 100px 20px;
 }
 
-#hero h2 {
-    font-size: 36px;
+#banner h2 {
+    font-size: 2.5em;
     margin-bottom: 20px;
 }
 
-#hero p {
-    font-size: 18px;
-}
-
-#servicos, #produtos, #contato {
-    padding: 50px 0;
-}
-
-#servicos h2, #produtos h2, #contato h2 {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.servico, .produto {
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-.servico img, .produto img {
-    width: 100%;
-    max-width: 300px;
-    height: auto;
-    border-radius: 8px;
-}
-
-.servico h3, .produto h3 {
-    margin-top: 20px;
-    font-size: 24px;
-}
-
-.servico p, .produto p {
-    font-size: 16px;
-}
-
-form input, form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-}
-
-form button {
-    background-color: #333;
+.button {
+    display: inline-block;
+    background-color: #ff6600; /* Laranja */
     color: #fff;
-    border: none;
     padding: 10px 20px;
-    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
 }
 
-form button:hover {
-    background-color: #555;
+#servicos, #sobre, #contato {
+    background-color: #fff; /* Fundo branco */
+    color: #333; /* Texto preto */
+    padding: 40px 20px;
+    margin: 20px 0;
+}
+
+#servicos ul {
+    list-style: none;
+}
+
+#servicos ul li {
+    margin-bottom: 10px;
 }
 
 footer {
-    background-color: #333;
+    background-color: #990000; /* Vermelho escuro */
     color: #fff;
     text-align: center;
-    padding: 20px 0;
+    padding: 20px;
 }
